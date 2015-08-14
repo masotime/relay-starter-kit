@@ -4,7 +4,7 @@ export default class extends Relay.Route {
     viewer: (Component) => Relay.QL`
       query {
         viewer {
-          ${Component.getFragment('viewer')},
+          ${Component.getFragment('game')}, // was "viewer"
         },
       }
     `,
